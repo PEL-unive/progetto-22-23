@@ -1,4 +1,4 @@
-# Programming Project and Laboratory A.A. 2022/2023
+# Project: Programming and Laboratory A.A. 2022/2023
 
 The goal of the project is to write a parser (using context-free grammars) for files in JSON format. The content of the file must be saved in a C++ container that allows access (via iterators and operator overloading) to the content read from the JSON file.
 
