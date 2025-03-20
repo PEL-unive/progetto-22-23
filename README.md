@@ -52,10 +52,10 @@ For example, consider the following JSON file:
 
 In the above example, the four strings to be extracted from the file (i.e., the characters to be inserted into the std::string you will construct) are as follows:
 
-- a string with \n quotes \"escaped\"
-- second string without escape
-- third string with more\" escapes
-- double \\ escape
+	una stringa con \n virgolette \"escaped\"
+	seconda stringa senza escape
+	terza stringa con altri\" escape
+	doppio \\" escape
 
 **Note**: Special characters like `\n` (and similar, such as `\t`, `\r`, etc.) are no exception! If the JSON file contains a string with `\n`, for example, you should extract **two** characters: a backslash (`\`) followed by the character `n`, **not** the single character `\n` (which means newline). This is a modification from the original format that we've introduced to simplify writing the parser.
 
@@ -65,7 +65,7 @@ A dictionary is a set (a list) of key-value pairs
 
 **key : value**
 
-separated by commas and enclosed in curly braces. Note that the key and value are separated by a colon (`:`). Keys can only be strings enclosed in double quotes (again, these strings can contain escape characters `\\`). The values can be, as mentioned above, a list, a dictionary, a string enclosed in double quotes (possibly with escape characters `\\`), a double value, a bool, or null.
+separated by commas and enclosed in curly braces. Note that the key and value are separated by a colon (‘:’). Keys can only be strings enclosed in double quotes (again, these strings can contain escape characters ‘\\’). The values can be, as mentioned above, a list, a dictionary, a string enclosed in double quotes (possibly with escape characters ‘\\’), a double value, a bool, or null.
 
 For example, the following JSON file is of type dictionary.
 
