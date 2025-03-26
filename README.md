@@ -52,10 +52,10 @@ For example, consider the following JSON file:
 
 In the above example, the four strings to be extracted from the file (i.e., the characters to be inserted into the std::string you will construct) are as follows:
 
-	una stringa con \n virgolette \"escaped\"
-	seconda stringa senza escape
-	terza stringa con altri\" escape
-	doppio \\" escape
+	a string with \n quotes \"escaped\"
+	second string without escape
+	third string with more\" escapes
+	double \\ escape
 
 **Note**: Special characters like `\n` (and similar, such as `\t`, `\r`, etc.) are no exception! If the JSON file contains a string with `\n`, for example, you should extract **two** characters: a backslash (`\`) followed by the character `n`, **not** the single character `\n` (which means newline). This is a modification from the original format that we've introduced to simplify writing the parser.
 
